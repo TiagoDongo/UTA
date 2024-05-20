@@ -31,7 +31,40 @@ opcao db ?
 .code 
 
 meu_menu:
-mov ah, 09h
-lea dx, menu
-int 21h
+   mov ah, 09h
+   lea dx, menu
+   int 21h
+
+   mov ah, 01h
+   int 21h
+    
+   mov opcao, al
+
+   cmp opcao, 
+   je opcao1
+   jmp meu_menu
+
+   cmp opcao, 
+   je opcao2
+
+   cmp opcao, 
+   je opcao3
+
+   cmp opcao, 
+   je opcao4
+
+   cmp opcao, 
+   je opcao5
+
+   cmp opcao, 
+   je opcao6
+
+   cmp opcao, 
+   je opcao7
+
+   cmp opcao, 
+   je opcao8
+
+   cmp opcao, 
+   je opcao9
     
