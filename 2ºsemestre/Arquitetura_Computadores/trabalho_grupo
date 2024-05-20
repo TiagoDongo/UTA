@@ -30,5 +30,8 @@ opcao db ?
 
 .code 
 
-
+meu_menu:
+mov ah, 09h
+lea dx, menu
+int 21h
     
