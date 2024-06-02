@@ -1,7 +1,10 @@
 # UTA
 Universidade Tecnica Do Atlantico.
 
-Curso: Engenharia Informática e Telecomunicações.
+Nome/Name🙂: Tiago Henrique Da Graça Dongo
 
- Repositorio criado para guardar projetos e trabalhos universitarios.
+Curso💻: Engenharia Informática e Telecomunicações.
+
+ Objetivo:
+ ⭐Repositorio criado para guardar projetos e trabalhos universitarios feitos durante o curso.
 
