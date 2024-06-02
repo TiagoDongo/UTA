@@ -59,7 +59,6 @@ org 100h
         mov ah, 09h
         lea dx, msg
         int 21h
-        Novalinha
     endm
     
     ;macro para introduzir o numero do estudante
@@ -117,7 +116,7 @@ org 100h
         mov [aluno_notas + si], bl
         
         inc si
-        cmp si,9h
+        cmp si,10
         je saltar_fora
         
         
@@ -147,17 +146,25 @@ org 100h
     ;macro para imprimir numero e nota do aluno com nota mais alta 
     macro melhor_nota
         Novalinha
-
-        imprime_msg melhor  ;mensagem decorativa
+        mov si, 0h
+        mov di, 1h
+        mov bl, [aluno_nota + si]
+        mov dl, [aluno_nota + di] 
+        mov cx, 10h
         
-        Novalinha
+        cmp dl, bl
+        jae maior
         
-        imprime_msg numero
-        ;falta imprimir o numero do aluno
+        maior:
+            mov bl, dl
+            inc di
         
-        Novalinha
-        
-        imprime_msg nota
+       ; imprime_msg melhor  ;mensagem decorativa         
+       ; Novalinha        
+       ; imprime_msg numero
+        ;falta imprimir o numero do aluno        
+       ; Novalinha
+       ; imprime_msg nota
         ;falta imprimir a nota do aluno   
     endm
     
@@ -205,6 +212,7 @@ org 100h
 main:
 
 M_menu:
+    Novalinha
     mov ah, 09h
     lea dx, menu   ;exibe o menu principal
     int 21h
@@ -212,7 +220,9 @@ M_menu:
     mov ah, 01h
     int 21h        ; le a opcao do meno selecionado e guarda o valor em opcao
     mov opcao, al
-
+    
+    Novalinha
+    
 ;compara opcao com os valore e faz je(salta se for iguat) a opcao correspondente    
     cmp opcao, '1'
     je opcao_1 
