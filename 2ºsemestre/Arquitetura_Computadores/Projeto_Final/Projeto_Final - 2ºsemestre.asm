@@ -37,7 +37,7 @@ org 100h
     op7 db 0dh,0ah,"7 - Tabela com numero,nota e se o aluno foi aprovado ou reprovado",0dh,0ah
     op8 db 0dh,0ah,"8 - Notas em ordem decrescente",0dh,0ah
     op9 db 0dh,0ah,"9 - Sair",0dh,0ah
-    
+    op0 db 0dh,0ah,"   ",0dh,0ah 
     op db "Opcao: $"
     
     opcao db ? 
@@ -148,16 +148,16 @@ org 100h
         Novalinha
         mov si, 0h
         mov di, 1h
-        mov bl, [aluno_nota + si]
-        mov dl, [aluno_nota + di] 
+        mov bl, [aluno_nota + si] ;aluno_nota[0]
+        mov dl, [aluno_nota + di] ;aluno_nota[1]
         mov cx, 10h
         
-        cmp dl, bl
-        jae maior
+        cmp dl, bl ;faz a comparação entre dl e bl
+        jae maior  ;salta para o rotulo maior se dl for maior ou igual a bl
         
         maior:
-            mov bl, dl
-            inc di
+            mov bl, dl ;bl recebe o valor de dl
+            inc di ;incrementa di(di + 1)
         
        ; imprime_msg melhor  ;mensagem decorativa         
        ; Novalinha        
@@ -200,6 +200,7 @@ org 100h
         
         aprov:
             ;numero do aluno
+            ;NOTA: criar macro para imprimir numeros
             imprime_msg aprovado
             inc si
             cmp si, 10
