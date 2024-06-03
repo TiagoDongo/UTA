@@ -6,6 +6,6 @@
 
 * **Meu Github:** [@TiagoDongo](https://github.com/TiagoDongo) 
 
-* **Curso💻:**Engenharia Informática e Telecomunicações 
+* **Curso💻:** Engenharia Informática e Telecomunicações 
 
 ⭐ Repositório criado para guardar projetos e trabalhos universitários feitos durante o curso 
