@@ -1,11 +1,11 @@
-# UTA
-Universidade Tecnica Do Atlantico.
+![Logo](https://github.com/UTA/assets/167580464/b309cf9c-d8d0-a55e-8f7b969d994c)
 
-Nome/Name🙂: Tiago Henrique Da Graça Dongo"
+## Universidade Tecnica Do Atlantico.
 
-Meu Github: [TiagoDongo](https://github.com/TiagoDongo)
+* **Nome/Name🧑‍💻:** Tiago Henrique Da Graça Dongo 
 
-Curso💻: Engenharia Informática e Telecomunicações.
+* **Meu Github:** [@TiagoDongo](https://github.com/TiagoDongo) 
 
-⭐Repositorio criado para guardar projetos e trabalhos universitarios feitos durante o curso.
+* **Curso💻:**Engenharia Informática e Telecomunicações 
 
+⭐ Repositório criado para guardar projetos e trabalhos universitários feitos durante o curso 
