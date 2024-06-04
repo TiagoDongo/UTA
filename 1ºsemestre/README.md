@@ -1,4 +1,3 @@
 * **Linguagem de programação utilizada:** C
 
-Esta pasta contem alguns dos projetos feitos no primeiro semestre da cadeira/disciplina Introdução a programação.
-Ainda estou procurando os outros trabalhos, tem alguns que não cheguei a guardar então terei que refazer tudo do zero.
+Pasta contendo projetos e fichas de exercícios feitos no 1°semestre da disciplina **Introdução a programação**
