@@ -109,7 +109,7 @@ org 100h
         mov [aluno_numero + si],al
         
         Novalinha
-       
+
         imprime_msg msg2
         nota_aluno
         mov num, bl
@@ -119,69 +119,22 @@ org 100h
         cmp si,10
         je saltar_fora
         
-        
         Novalinha
         
         loop  aluno
         saltar_fora:  
     endm
-    
-    ;possivel uso para imprimir a nota e o numero
-    macro Imprime2Digitos n
-        mov al, bl
-        mov al, 0h
-        mov bh, 0ah
-        div bh
-        mov dl, al
-        mov bh, ah
-        mov ah, 02h
-        add dl, 30h
-        int 21h
-        mov dl, bh
-        add dl, 30h
-        int 21h
-    endm
-    
+
     
     ;macro para imprimir numero e nota do aluno com nota mais alta 
     macro melhor_nota
-        Novalinha
-        mov si, 0h
-        mov di, 1h
-        mov bl, [aluno_nota + si] ;aluno_nota[0]
-        mov dl, [aluno_nota + di] ;aluno_nota[1]
-        mov cx, 10h
-        
-        cmp dl, bl ;faz a comparação entre dl e bl
-        jae maior  ;salta para o rotulo maior se dl for maior ou igual a bl
-        
-        maior:
-            mov bl, dl ;bl recebe o valor de dl
-            inc di ;incrementa di(di + 1)
-        
-       ; imprime_msg melhor  ;mensagem decorativa         
-       ; Novalinha        
-       ; imprime_msg numero
-        ;falta imprimir o numero do aluno        
-       ; Novalinha
-       ; imprime_msg nota
-        ;falta imprimir a nota do aluno   
+
     endm
     
-   
+    
     ;macro para imprimir numero e nota do aluno com nota mais alta 
     macro pior_nota
-        Novalinha
-        
-        imprime_msg pior
-        
-        Novalinha
-        
-        imprime_msg numero
-        
-        Novalinha 
-        
-        imprime_msg nota
+
     endm
     
     
@@ -255,9 +208,8 @@ M_menu:
     
     
 opcao_1:
-
-   dados_aluno ;invocando o macro para para introduzir os dados do aluno(numero e nota)
-   jmp M_menu  ;retorna ao menu principal
+    dados_aluno ;invocando o macro para para introduzir os dados do aluno(numero e nota)
+    jmp M_menu  ;retorna ao menu principal
     
 opcao_2:
     melhor_nota
@@ -283,11 +235,6 @@ opcao_8:
     
 opcao_9:
     jmp Fim
-    
-    
-    
-    
-    
     
 Fim:
 
