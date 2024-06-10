@@ -6,7 +6,6 @@
 
 * **Meu Github:** [@TiagoDongo](https://github.com/TiagoDongo) 
 
-* **Email:** tiagodongo521@gmail.com
 
 * **Curso💻:** Engenharia Informática e Telecomunicações 
  
