@@ -6,7 +6,8 @@
 
 * **Meu Github:** [@TiagoDongo](https://github.com/TiagoDongo) 
 
-* **Curso💻:** Engenharia Informática e Telecomunicações 
+* **Email:** tiagodongo521@gmail.com
 
-* **Email:** tiagodongo521@gmail.com 
+* **Curso💻:** Engenharia Informática e Telecomunicações 
+ 
 ⭐ Repositório criado para guardar projetos e trabalhos universitários feitos durante o curso 
