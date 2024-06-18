@@ -507,29 +507,30 @@ main:
 
 ;procedimento para imprimir um numero de dois digitos
 Imprimir2Digitos proc
-    mov al, bl 
-    MOV ah, 0h
-    mov bh, 0ah
-    div bh
-    mov dl, al
-    mov bh, ah
-    mov ah, 02h 
-    add dl, 30h
-    int 21h    
-    mov dl, bh
-    add dl, 30h
-    int 21h
-    ret
+    mov al, bl ;move para al o valor de bl
+    MOV ah, 0h ;zera ah
+    mov bh, 0ah ;move para bh o divisor 10
+    div bh ;divide ax por 10
+    mov dl, al ;move para dl o quociente  al
+    mov bh, ah ;move para bl o resto ah
+    mov ah, 02h ;funcao para imprimir um caracter
+    add dl, 30h ;converte o valor para ASCII
+    int 21h  ;realiza a funcao  
+    mov dl, bh ;move para dl o valor de bh
+    add dl, 30h ;converte o valor para seu codigo ASCCI
+    int 21h ;realiza a funcao
+    ret ;retorna do procedimento
 Imprimir2Digitos endp  
 
+;procedimento para limpar a tela e os registradores
 limpeza proc
-    xor ax, ax
-    xor bx, bx
-    xor cx, cx
-    xor dx, dx
-    mov ah, 06h
-    int 10h
-    ret
+    xor ax, ax ;zera o registrador ax
+    xor bx, bx ;zera o registrador bx
+    xor cx, cx ;zera o registrador cx
+    xor dx, dx ;zera o registrador dx
+    mov ah, 06h ;funcao para rolar a tela para cima
+    int 10h ;interrupcao para realizar a funcao
+    ret ;retorna do procedimento
 endp
 
 end main    
