@@ -528,7 +528,7 @@ limpeza proc
     xor bx, bx ;zera o registrador bx
     xor cx, cx ;zera o registrador cx
     xor dx, dx ;zera o registrador dx
-    mov ah, 06h ;funcao para rolar a tela para cima
+    mov ah, 06h ;funcao para fazer scroll na tela para cima e lompando-a em modo de texto
     int 10h ;interrupcao para realizar a funcao
     ret ;retorna do procedimento
 endp
