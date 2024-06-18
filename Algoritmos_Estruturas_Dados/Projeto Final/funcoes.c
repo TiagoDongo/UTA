@@ -4,158 +4,172 @@
 #include <string.h>
 #include <locale.h>
 
-// ################# OPï¿½ï¿½O-1 ##################### //
+// ################# OPÇÃO-1 ##################### //
 
+//função para adicionar uma nova musica na playlist
 void adicionarMusica(Musica **playlist){
+    //aloca espaço para uma nova musica
     Musica *novaMusica = (Musica *)malloc(sizeof(Musica));
-    printf(" Titulo: ");
-    scanf(" %[^\n]", novaMusica->titulo);        // Lï¿½ uma linha inteira incluindo espaï¿½os
+    printf(" Título: ");
+    scanf(" %[^\n]", novaMusica->titulo);        // Lê uma linha inteira incluindo espaços
     printf(" Artista: ");
-    scanf(" %[^\n]", novaMusica->artista);       // Lï¿½ uma linha inteira incluindo espaï¿½os
-    printf(" Duracao (segundos): ");
+    scanf(" %[^\n]", novaMusica->artista);       // Lê uma linha inteira incluindo espaços
+    printf(" Duração (segundos): ");
     scanf("%d", &novaMusica->duracao);
     printf(" Ano: ");
     scanf("%d", &novaMusica->ano);
     novaMusica->proxima = NULL;
 
     if (*playlist == NULL) {
+        //se a playlist estiver vazia, insere a nova musica no inicio
         *playlist = novaMusica;
     } else {
+        //caso contrario, insere a nova musica no final da playlist
         Musica *temp = *playlist;
         while (temp->proxima != NULL) {
             temp = temp->proxima;
         }
         temp->proxima = novaMusica;
     }
-    printf("\n Mï¿½sica adicionada na PlayList!\n\n");
+    printf("\n Música adicionada na PlayList!\n\n");
 }
 
 
-// ################# OPï¿½ï¿½O-2 ##################### //
-
+// ################# OPÇÃO-2 ##################### //
+//Função para remover uma musica da playlist
 void removerMusica(Musica **playlist) {
     char titulo[100];
-    printf(" Titulo da mï¿½sica a remover: ");
-    scanf(" %[^\n]", titulo);
+    printf(" Título da música a remover: ");
+    scanf(" %[^\n]", titulo);//lê o titulo da musica a ser removido
 
     Musica *temp = *playlist, *prev = NULL;
 
+    //verifica se a musica a ser removida esta no inicio da playlist
     if (temp != NULL && strcmp(temp->titulo, titulo) == 0) {
-        *playlist = temp->proxima;
-        free(temp);
-        printf(" Mï¿½sica removida da PlayList!\n");
+        *playlist = temp->proxima; //atualiza o ponteiro da playlist
+        free(temp); //liberta a memoria da musica removida
+        printf(" Música removida da PlayList!\n");
         return;
     }
 
+    //procura a musica a ser removida na playlist
     while (temp != NULL && strcmp(temp->titulo, titulo) != 0) {
-        prev = temp;
-        temp = temp->proxima;
+        prev = temp; //atualiza o ponteiro anterior
+        temp = temp->proxima; //avança para o proximo nó
     }
 
+    //se a musica não for encontrada
     if (temp == NULL) {
-        printf(" Mï¿½sica nï¿½o encontrada!\n");
+        printf(" Música não encontrada!\n");
         return;
     }
 
+    //remove a musica da playlist
     prev->proxima = temp->proxima;
-    free(temp);
-    printf(" Mï¿½sica removida!\n");
+    free(temp);//liberta a memoria da musica removida
+    printf(" Música removida!\n");
 }
 
 
-// ################# OPï¿½ï¿½O-3 ##################### //
+// ################# OPÇÃO-3 ##################### //
 
+//função para reproduzir a playlist
 void reproduzirPlaylist(Musica *playlist, int ordem) {
     if (playlist == NULL) {
         printf(" Playlist vazia!\n");
         return;
     }
 
-    if (ordem == 1) {
-        Musica *temp = playlist;
+    if (ordem == 1) { //reprodução da playlist em ordem crescente
+        Musica *temp = playlist; //ponteiro para o inicio da playlist
         while (temp != NULL) {
-            printf(" Tï¿½tulo: %s, Artista: %s, Duraï¿½ï¿½o: %d segundos, Ano: %d\n",
+            printf(" Título: %s, Artista: %s, Duração: %d segundos, Ano: %d\n",
                    temp->titulo, temp->artista, temp->duracao, temp->ano);
-            temp = temp->proxima;
+            temp = temp->proxima;//avança para a proxima musica
         }
-    } else if (ordem == 2) {
-        // Reproduzir em ordem decrescente: usamos recursï¿½o para imprimir em ordem inversa
+    } else if (ordem == 2) {// Reproduzir em ordem decrescente
+        // usamos recursão para imprimir em ordem inversa
         if (playlist->proxima != NULL) {
             reproduzirPlaylist(playlist->proxima, ordem);
         }
-        printf(" Tï¿½tulo: %s, Artista: %s, Duraï¿½ï¿½o: %d segundos, Ano: %d\n",
+        printf(" Título: %s, Artista: %s, Duração: %d segundos, Ano: %d\n",
                playlist->titulo, playlist->artista, playlist->duracao, playlist->ano);
     } else {
-        printf(" Ordem invï¿½lida!\n");
+        printf(" Ordem inválida!\n");
     }
 }
 
 
-// ################# OPï¿½ï¿½O-4 ##################### //
+// ################# OPÇÃO-4 ##################### //
 
+//função para procurar uma musica
 void procurarMusica(Musica *playlist) {
     int opcao, ano;
     char artista[100];
     printf(" Procurar por:\n1. Artista\n2. Ano\n");
     scanf("%d", &opcao);
 
-    if (opcao == 1) {
+    if (opcao == 1) { //procura a musica atravez do nome do artista
         printf(" Nome do artista: ");
-        scanf(" %[^\n]", artista);
-        Musica *temp = playlist;
-        while (temp != NULL) {
-            if (strcmp(temp->artista, artista) == 0) {
-                printf(" Tï¿½tulo: %s, Artista: %s, Duraï¿½ï¿½o: %d segundos, Ano: %d\n",
+        scanf(" %[^\n]", artista); //lê o nome do artista
+        Musica *temp = playlist;//ponteiro temporario para a playlist
+        while (temp != NULL) {//enquato não chegar ao fim da playlist
+            if (strcmp(temp->artista, artista) == 0) {//faz comparação entre os nomes dos artistas na playlist com o nome digitado pelo usuario
+                printf(" Título: %s, Artista: %s, Duração: %d segundos, Ano: %d\n",
                        temp->titulo, temp->artista, temp->duracao, temp->ano);
             }
-            temp = temp->proxima;
+            temp = temp->proxima;//avança para o proximo musica
         }
-    } else if (opcao == 2) {
+    } else if (opcao == 2) {//procura a musica atravez do seu ano
         printf(" Ano: ");
-        scanf("%d", &ano);
-        Musica *temp = playlist;
-        while (temp != NULL) {
-            if (temp->ano == ano) {
-                printf(" Tï¿½tulo: %s, Artista: %s, Duraï¿½ï¿½o: %d segundos, Ano: %d\n",
+        scanf("%d", &ano);//lê o ano
+        Musica *temp = playlist;//ponteiro temporario para a playlist
+        while (temp != NULL) {//enquato não chegar ao fim da lista
+            if (temp->ano == ano) {//compara o ano
+                printf(" Título: %s, Artista: %s, Duração: %d segundos, Ano: %d\n",
                        temp->titulo, temp->artista, temp->duracao, temp->ano);
             }
-            temp = temp->proxima;
+            temp = temp->proxima;//avança para a proxima musica
         }
     } else {
-        printf(" Opï¿½ï¿½o invï¿½lida!\n");
+        printf(" Opção inválida!\n");
     }
 }
 
 
-// ################# OPï¿½ï¿½O-5 ##################### //
+// ################# OPÇÃO-5 ##################### //
 
+//função para calcular a duração total da playlist
 void duracaoPlaylist(Musica *playlist) {
-    int totalMusicas = 0, totalDuracao = 0;
-    Musica *temp = playlist;
-    while (temp != NULL) {
-        totalMusicas++;
-        totalDuracao += temp->duracao;
-        temp = temp->proxima;
+    int totalMusicas = 0, totalDuracao = 0;//variaveis auxiliares
+    Musica *temp = playlist;//ponteiro para o inicio da playlist
+    while (temp != NULL) {//enquanto não chegar ao fim da playlist
+        totalMusicas++;//incrementa a variavel totalMusicas
+        totalDuracao += temp->duracao;//soma a duração da musica
+        temp = temp->proxima;//avança para a proxima musica
     }
 
+    //converte a duração total para horas, minutos e segundos
     int horas = totalDuracao / 3600;
     int minutos = (totalDuracao % 3600) / 60;
     int segundos = totalDuracao % 60;
 
-    printf(" Nï¿½mero total de mï¿½sicas: %d\n", totalMusicas);
-    printf(" Tempo total de duraï¿½ï¿½o: %d horas, %d minutos, %d segundos\n", horas, minutos, segundos);
+    //exibe o numero total de musicas e a duração total da playlist
+    printf(" Número total de músicas: %d\n", totalMusicas);//mostra o total de musicas que tem a playlist
+    printf(" Tempo total de duração: %d horas, %d minutos, %d segundos\n", horas, minutos, segundos);//mostra o tempo total da playlist
 }
 
 
-// ################# OPï¿½ï¿½O-6 ##################### //
+// ################# OPÇÃO-6 ##################### //
 
+//função para avançar na playlist
 void avancarPlaylist(Musica **playlist, Musica **atual) {
     if (*atual == NULL) {
-        *atual = *playlist;
+        *atual = *playlist;//começa do inicio da playlist
     } else if ((*atual)->proxima != NULL) {
-        *atual = (*atual)->proxima;
+        *atual = (*atual)->proxima;//avança para a proxima musica
     } else {
-        printf(" Jï¿½ estï¿½ na ï¿½ltima mï¿½sica da playlist!\n");
+        printf(" Já está na última música da playlist!\n");
     }
 
     if (*atual != NULL) {
@@ -164,24 +178,25 @@ void avancarPlaylist(Musica **playlist, Musica **atual) {
 }
 
 
-// ################# OPï¿½ï¿½O-7 ##################### //
+// ################# OPÇÃO-7 ##################### //
 
+//função para retroceder na playlist
 void retrocederPlaylist(Musica **playlist, Musica **atual) {
     if (*atual == NULL) {
-        printf(" Playlist vazia ou nï¿½o comeï¿½ou a reproduï¿½ï¿½o!\n");
+        printf(" Playlist vazia ou não começou a reprodução!\n");
         return;
     }
 
     if (*atual == *playlist) {
-        printf(" Jï¿½ estï¿½ na primeira mï¿½sica da playlist!\n");
+        printf(" Já está na primeira música da playlist!\n");
         return;
     }
 
     Musica *temp = *playlist;
     while (temp->proxima != *atual) {
-        temp = temp->proxima;
+        temp = temp->proxima;//avança para a proxima musica
     }
-    *atual = temp;
+    *atual = temp;//atualiza o poteiro atual
 
     if (*atual != NULL) {
         printf(" Reproduzindo: %s - %s\n", (*atual)->titulo, (*atual)->artista);
@@ -189,8 +204,9 @@ void retrocederPlaylist(Musica **playlist, Musica **atual) {
 }
 
 
-// ################# OPï¿½ï¿½O-8 ##################### //
+// ################# OPÇÃO-8 ##################### //
 
+//função para guardar a playlist em um arquivo
 void guardarPlaylist(Musica *playlist) {
     FILE *arquivo = fopen("playlist.txt", "w");
     if (arquivo == NULL) {
@@ -200,16 +216,18 @@ void guardarPlaylist(Musica *playlist) {
 
     Musica *temp = playlist;
     while (temp != NULL) {
+        //escreve os detalhes da musica no arquivo
         fprintf(arquivo, "%s\n%s\n%d\n%d\n", temp->titulo, temp->artista, temp->duracao, temp->ano);
-        temp = temp->proxima;
+        temp = temp->proxima;//avança para a proxima musica
     }
     fclose(arquivo);
     printf(" Playlist guardada com sucesso!\n");
 }
 
 
-// ################# OPï¿½ï¿½O-9 ##################### //
+// ################# OPÇÃO-9 ##################### //
 
+//função para carregar a playlist de um arquivo
 void carregarPlaylist(Musica **playlist) {
     FILE *arquivo = fopen("playlist.txt", "r");
     if (arquivo == NULL) {
@@ -220,6 +238,7 @@ void carregarPlaylist(Musica **playlist) {
     char titulo[100], artista[100];
     int duracao, ano;
     while (fscanf(arquivo, " %[^\n]\n%[^\n]\n%d\n%d\n", titulo, artista, &duracao, &ano) == 4) {
+        //aloca espaço para uma nova musica e preenche os detalhes
         Musica *novaMusica = (Musica *)malloc(sizeof(Musica));
         strcpy(novaMusica->titulo, titulo);
         strcpy(novaMusica->artista, artista);
@@ -228,8 +247,10 @@ void carregarPlaylist(Musica **playlist) {
         novaMusica->proxima = NULL;
 
         if (*playlist == NULL) {
+            //se a playlist estiver vazia, insere a nova musica no inicio
             *playlist = novaMusica;
         } else {
+             // Caso contrário, insere a nova música no final da playlist
             Musica *temp = *playlist;
             while (temp->proxima != NULL) {
                 temp = temp->proxima;
