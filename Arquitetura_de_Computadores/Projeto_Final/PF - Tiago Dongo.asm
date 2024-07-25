@@ -74,7 +74,7 @@ org 100h
     op9 db 0dh,0ah,"9 - Sair",0dh,0ah
     op10 db 0dh,0ah, " ",0dh,0ah
     op db "Opcao: $"
-     
+    
     opcao db ?
     
 
@@ -151,7 +151,7 @@ org 100h
             mov [aluno_numero + si], bl ;move para a primeira posicao do vetor o calor de al
             
             Novalinha  ;imprime uma nova linha
-           
+
             imprime_msg msg2 ;imprime a mensagem para inserir a nota do aluno
             nota_aluno ;le a nota do aluno e armazena bl
             mov num, bl ;armazena a nota lida na variavel num
@@ -160,7 +160,6 @@ org 100h
             inc si ;incrementa o valor de si
             cmp si,10 ;compara se si > 10
             je saltar_fora ;se si > 10 salta para o rotulo salta_fora
-            
             
             Novalinha ;imprime uma nova linha
         
@@ -178,7 +177,7 @@ org 100h
         mov maior, al ;move para maior aluno_notas[si]       
         mov cx, 9d  ;loop para percorrer 10 alunos
 
-    
+
         procura_maior:   
             inc si ;incrementa o indice
             mov ah, [aluno_notas + si]  ;move para ah aluno_notas[si]
@@ -192,9 +191,8 @@ org 100h
                 mov indice, bl 
                 
             avancar:
-                        
+        
         loop procura_maior ;faz loop do label procura
-                
     endm 
     
     
@@ -212,7 +210,7 @@ org 100h
             cmp ah, menor ;compara al com menor
             jl proximo_aluno ;salta se o valor de al for abaixode 10
             jmp continuar  ;salta para continuar se o valor de al nao for abaixo de 10
-                         
+            
             proximo_aluno:
                 mov menor, ah ;move o valor de al para menor
                 mov bx, si ;move para bx o valor de si
@@ -221,11 +219,9 @@ org 100h
             continuar:
 
             loop procura_menor ;decrementa cx e faz o loop se cx nao for zero
-                
     endm
-    
-    
-    
+
+
     ;macro para saber a quatidade de alunos aprovados e reprovado
     macro aprovado_reprovado 
         mov si, 0d ;inicializa si a 0

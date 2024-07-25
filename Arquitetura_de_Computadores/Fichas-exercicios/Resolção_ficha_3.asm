@@ -6,14 +6,14 @@ org 100h
 mov ax, 1h
 mov cx, 9
 num:
-   add ax, 30h
-   mov dl, al
-   mov ah, 02h 
-   int 21h
-   
-   sub ax, 30h
-   inc ax
-   
+    add ax, 30h
+    mov dl, al
+    mov ah, 02h 
+    int 21h
+    
+    sub ax, 30h
+    inc ax
+    
 loop num 
 
 
