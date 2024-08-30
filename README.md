@@ -1,7 +1,7 @@
 <div align=center >
   <img src="https://github.com/TiagoDongo/UTA/assets/167580464/b300cf9c-d8d0-4a9d-a55e-8f7b969d994c" alt="Logo" height="135px">
   <h2>Universidade Técnica Do Atlântico</h2>
-  <p>Este repositório contém uma coleção de projetos e trabalhos realizados ao longo do curso na Universidade Técnica Do Atlântico. Cada pasta está organizada por disciplina, facilitando a navegação e o acesso aos diferentes projetos.</p>
+  <p>Este repositório contém uma coleção de projetos e trabalhos realizados ao longo do curso de Engenharia Informática e Telecomunicações na Universidade Técnica Do Atlântico. Cada pasta está organizada por disciplina, facilitando a navegação e o acesso aos diferentes projetos.</p>
 </div>
 
 
