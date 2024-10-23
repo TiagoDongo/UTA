@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #f9f9f9;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container  .header{
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    background: #e8f4fa;
+    border-bottom: 1px solid #ddd;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .header h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.container  .header h2{
+    font-size: 24px;
+    color: #333;
+}
+
+.container .top{
+    display: flex;
+    flex: 2;
+}
+
+.container .top .post{
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.container .top .post .autor-info{
+    display: flex;
+    align-items: center;
+    margin: 8px 15px;
+    gap: 10px;
+}
+
+.container .top .post .autor-info p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.container .top .post .autor-info img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.container .top .post .post-image{
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .top .post .post-image img{
+    width: 50em;
+    border-radius: 8px;
+}
+
+.container .top .content{
+    display: flex;
+    flex-direction: column;
+    flex: 1.25;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 5px;
+}
+
+.container .top .content .html{
+    line-height: 20px;
+}
+
+.container .top .content .html h3,
+.container .top .content .learning h3{
+    text-align: justify;
+}
+
+.container .top .content .html .important{
+    color: #0f0f0f;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.container .top .content .html ul,
+.container .top .content .learning ul{
+    position: relative;
+    left: 50px;
+}
+
+.container .top .content p{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.container .bottom{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.container .bottom .head{
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+.container .bottom .item-list{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 50px;
+}
+
+.container .bottom .item-list .item:first-child,
+.container .bottom .item-list .item:last-child{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    width: 20%;
+    height: 90px;
+}
+
+
+.container .bottom .item-list .item img{
+    width: 70px;
+    position: relative;
+    left: 8px;
+}
+
+.container .bottom .item-list .item:nth-child(2),
+.container .bottom .item-list .item:nth-child(3){
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    width: 15%;
+    height: 90px;
+}
+
+.container .bottom .item-list .item img{
+    border-radius: 6px;
+}
+
+.container .bottom .item-list .item  .info{
+    display: grid;
+    line-height: 20px;
+}
+
+.container footer{
+    display: flex;
+    position: relative;
+    top: 50px;
+    margin: 10px;
+}
+
+.container footer p{
+    justify-content: flex-end;
+}

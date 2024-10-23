@@ -3,91 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Linguagem fundamental de web: HTML</title>
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-            box-sizing: border-box;
-            text-align: justify;
-        }
-
-        p{
-            font-size: 14px;
-        }
-
-        h1,h2,h3,h4,h5{
-            font-weight: 600;
-        }
-
-        img{
-            border-radius: 6px;
-        }
-    </style>
 </head>
-<body>
+    <div class="container">
+            <div class="header">
+                <h1>Revista de Código</h1>
+                <h2>A linguagem básica da Web: HTML</h2>
+            </div>
 
-    <h1>Revista de Código</h1>
+            <div class="top">
+                <div class="post">
+                    <div class="autor-info">
+                        <img src="img/laura-jones.jpg">
+                        <p>Postado por Laura Jones na segunda-feira, 21 de junho de 2027</p>
+                    </div>
+    
+                    <div class="post-image">
+                        <img src="img/post-img.jpg">
+                    </div>
+                </div>
 
-    <h2>A linguagem básica da Web: HTML</h2>
+                <div class="content">
+                    <p>Todos os sites e aplicativos da web modernos são construídos usando três tecnologias fundamentais: HTML, CSS e JavaScript. Estas são as linguagens da web.</p>
 
-    <img src="img/laura-jones.jpg" width="70px">
-    <p>Postado por Laura Jones na segunda-feira, 21 de junho de 2027</p>
+                    <p>Neste post, vamos nos concentrar em HTML. Vamos aprender o que é HTML e por que você também deve aprendê-lo.</p>
 
+                    <div class="html">
+                        <h3>O que é HTML?</h3>
 
-    <img src="img/post-img.jpg" width="700px" class="post-l">
+                        <p>HTML significa HyperText Markup Language.</p> 
+                        <p>É uma linguagem de marcação que os desenvolvedores da Web usam para estruturar e descrever o conteúdo de uma página da Web (não uma linguagem de programação).</p>
+                        <p>HTML consiste em elementos que descrevem diferentes tipos de conteúdo: <br>
+                            parágrafos, links, cabeçalhos, imagens, vídeo, etc. Os navegadores da Web entendem HTML e processam o código HTML como sites.</p>
 
-    <p>Todos os sites e aplicativos da web modernos são construídos usando três tecnologias fundamentais: HTML, CSS e JavaScript. Estas são as linguagens da web.</p>
+                        <p class="important">Em HTML, cada elemento é composto de 3 partes:</p>
+                        <ul>
+                            <li>A etiqueta de abertura</li>
+                            <li>A etiqueta de fechamento</li>
+                            <li>O elemento real</li>
+                            <li>Você pode aprender mais no MDN Web Docs.</li>
+                        </ul>
+                    </div>
 
-    <p>Neste post, vamos nos concentrar em HTML. Vamos aprender o que é HTML e por que você também deve aprendê-lo.</p>
+                    <div class="learning">
+                        <h3>Porque deve aprender HTML?</h3>
 
-    <h3>O que é HTML?</h3>
+                        <p>Existem inúmeras razões para aprender a linguagem fundamental da web. Aqui estão 5 deles:</p>
 
-    <p>HTML significa HyperText Markup Language. É uma linguagem de marcação que os desenvolvedores da Web usam para estruturar e descrever o conteúdo de uma página da Web (não uma linguagem de programação).</p>
+                        <ul>
+                            <li>Ser capaz de usar a linguagem de desenvolvimento web fundamental</li>
+                            <li>Para criar sites bonitos à mão em vez de depender de ferramentas como Worpress ou Wix</li>
+                            <li>Para construir aplicativos da web</li>
+                            <li>Para impressionar os amigos</li>
+                            <li>Para me divertir</li>
+                        </ul>
+                    </div>
 
-    <p>HTML consiste em elementos que descrevem diferentes tipos de conteúdo: parágrafos, links, cabeçalhos, imagens, vídeo, etc. Os navegadores da Web entendem HTML e processam o código HTML como sites.</p>
+                    <p>Espero que você tenha aprendido algo novo aqui. Vejo você na próxima vez!</p>
+                </div>
+            </div>
 
-    <p>Em HTML, cada elemento é composto de 3 partes:</p>
-    <ul>
-        <li>A etiqueta de abertura</li>
-        <li>A etiqueta de fechamento</li>
-        <li>O elemento real</li>
-        <li>Você pode aprender mais no MDN Web Docs.</li>
-    </ul>
+            <div class="bottom">
+                <div class="related-post">
+                    <div class="head">
+                        <h3>Post relacionados</h3>
+                    </div>
 
-    <h3>Porque deve aprender HTML?</h3>
+                    <div class="item-list">
+                        <div class="item">
+                            <img src="img/related-1.jpg">
+                            <div class="info">
+                                <a  href="#">Aprender Desemvolvimento web</a>
+                                <p>Por Jonas Schmedtmann</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/related-2.jpg">
+                            <div class="info">
+                                <a href="#">O poder de CSS</a>
+                                <p>Por Jim Dillon</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/related-3.jpg">
+                            <div class="info">
+                                <a href="#">Porquê JavaScript é Ótimo</a>
+                                <p>Por Matilda</p>
+                            </div>
+                        </div>
 
-    <p>Existem inúmeras razões para aprender a linguagem fundamental da web. Aqui estão 5 deles:</p>
+                        <div class="item">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <ul>
-        <li>Ser capaz de usar a linguagem de desenvolvimento web fundamental</li>
-        <li>Para criar sites bonitos à mão em vez de depender de ferramentas como Worpress ou Wix</li>
-        <li>Para construir aplicativos da web</li>
-        <li>Para impressionar os amigos</li>
-        <li>Para me divertir</li>
-    </ul>
-
-    <p>Espero que você tenha aprendido algo novo aqui. Vejo você na próxima vez!</p>
-
-    <h5>Post relacionados</h5>
-
-    <ul>
-        <li>
-            <img src="img/related-1.jpg" width="50px">
-            <a  href="#">Aprender Desemvolvimento web</a>
-            <p>Por Jonas Schmedtmann</p>
-        </li>
-        <li>
-            <img src="img/related-2.jpg" width="50px">
-            <a href="#">O poder de CSS</a>
-            <p>Por Jim Dillon</p>
-        </li>
-        <li>
-            <img src="img/related-3.jpg" width="50px">
-            <a href="#">Porquê JavaScript é Ótimo</a>
-            <p>Por Matilda</p>
-        </li>
-    </ul>
-
-    <p>&copy; 2023 TiagoDongo. Todos os direitos reservados.</p>
+            <footer>
+                <p>&copy; 2023 TiagoDongo. Todos os direitos reservados.</p>
+            </footer>
+    </div>
 </body>
 </html>
