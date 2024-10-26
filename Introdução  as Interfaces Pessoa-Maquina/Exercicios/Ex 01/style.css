@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu",sans-serif;
+    text-decoration: none;
+}
+
+.header{
+    background: #f3f2f1;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+    border-top: 10px solid #1098ad;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header h1{
+    color: #1098ad;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.header a{
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.header a:link,
+a:link{
+    color: #1098ad;
+    transition: all 0.3s ease;
+}
+
+.header a:link:hover,
+a:link:hover{
+    color: #333;
+}
+
+.header a:hover,
+a:hover{
+    color: #1098ad;
+    font-weight: bold;
+    text-decoration: underline  #1098ad;
+}
+
+.header a:active,
+a:active{
+    background: #ccc;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    margin:  10px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 40px;
+}
+article h3{
+    font-size: 30px;
+    margin:  10px 0 0 0;
+}
+
+h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin:  10px 0 0 0;
+}
+
+ol, ul{
+    margin: 0 0 20px 50px;
+}
+
+li{
+    font-size: 20px;
+}
+
+.autor{
+    font-size: 16px;
+}
+
+aside{
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 0 50px 0;
+    background: #f3f2f1;
+}
