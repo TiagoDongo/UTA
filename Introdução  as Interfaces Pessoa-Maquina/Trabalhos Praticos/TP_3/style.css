@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu",sans-serif;
+}
+
+.container{
+    border: 2px solid #010101;
+    border-radius: 6px;
+}
+
+
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+h1{
+    text-align: center;
+    background: #ccc;
+}
+
+button{
+    background: #f3f2f1;
+    font-size: 18px;
+    color: #010101;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 20px;
+    border-radius: 6px;
+}
+
+button:hover{
+    background: #010101;
+    color: #f3f2f1;
+}
+
+img{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.preço{
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+li{
+    margin: 10px 0 0 0;
+}
+
+a{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    text-decoration: none;
+    border: 1px solid #010101;
+    padding: 2px;
+    color: #3364c0;
+    background: #f3f2f1;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+a:hover{
+    font-size: 18px;
+    margin-left: 15px;
+    border: 1px solid #010101;
+    color: #f3f2f1;
+    background: #3364c0;
+}
+
+.envio-gratis{
+    color: #7c7b7b;
+}

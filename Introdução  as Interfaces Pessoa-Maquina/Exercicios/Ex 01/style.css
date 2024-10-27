@@ -94,3 +94,8 @@ aside{
     padding: 50px 0 50px 0;
     background: #f3f2f1;
 }
+
+.post{
+    width: 600px;
+    height: 250px;
+}
