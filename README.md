@@ -29,6 +29,11 @@
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="45px"/>     
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="45px"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="45px"/>
-                
+  
+  * <h3>Fundamentos de Sistemas Operativos</h3>
+  <p>Disciplina lecionada na distribuição do linux: Ubunto</p>
+  <p>Linguagens e Ferramentas utilizadas</p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
+  <img src="https://img.icons8.com/?size=100&id=UjcGNVXknmz3&format=png&color=000000" height="45px">
  </div>
  
