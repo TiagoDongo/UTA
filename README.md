@@ -8,12 +8,12 @@
 <div>
   <h2>Estrutura do Repositório</h2>
   <p align=center>A organização deste repositório se encontra organizada em pastas, em que cada uma representa uma disciplina com seus respectivos projetos</p>
-  
+
   * <h3>Algoritmos e Estruturas de Dados</h3>
   <p>Linguagens e Ferramentas utilizadas</p>
   <img src="https://img.icons8.com/?size=100&id=6viIuYmvBvuk&format=png&color=000000" height="45px">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
-            
+
   * <h3>Arquitetura de Computadores</h3>
   <p>Linguagens e Ferramentas utilizadas</p>
   <img src="https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000" height="45px">
@@ -26,14 +26,14 @@
 
   * <h3>Introdução as interfaces Pessoa-Maquina</h3>
   <p>Linguagens e Ferramentas utilizadas</p>
-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="45px"/>     
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="45px"/>     
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="45px"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="45px"/>
   
   * <h3>Fundamentos de Sistemas Operativos</h3>
-  <p>Disciplina lecionada na distribuição do linux: Ubunto</p>
   <p>Linguagens e Ferramentas utilizadas</p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" height="45px"/>
   <img src="https://img.icons8.com/?size=100&id=UjcGNVXknmz3&format=png&color=000000" height="45px">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
  </div>
  
