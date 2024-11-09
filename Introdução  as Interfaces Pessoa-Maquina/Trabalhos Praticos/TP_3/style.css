@@ -1,82 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
     font-family: "Ubuntu",sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
 }
 
 .container{
     border: 2px solid #010101;
     border-radius: 6px;
+    width: 900px;
 }
 
-
-h3{
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 10px;
+.container .content{
+    display: flex;
+    justify-content: space-between;
 }
 
-p{
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 10px;
-}
-
-h1{
+.container > h1{
     text-align: center;
-    background: #ccc;
-}
-
-button{
     background: #f3f2f1;
-    font-size: 18px;
-    color: #010101;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 10px 20px;
-    border-radius: 6px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-button:hover{
-    background: #010101;
+.container > h1::after{
+    content: "SALDO";
+    font-size: 12px;
     color: #f3f2f1;
+    background: red;
+    padding: 4px;
+    border-radius: 4px;
+    position: absolute;
+    left: 210px;
+    top: -7px;
 }
 
-img{
+.container .content > img{
     margin-left: 10px;
     border-radius: 4px;
 }
 
-.preço{
-    font-size: 20px;
-    margin-left: 10px;
-    text-decoration: underline;
+.container .content .about-product{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 240px;
+    padding: 4px;
 }
 
-li{
-    margin: 10px 0 0 0;
+.container .content .about-product .status{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-a{
-    font-size: 16px;
+.container .content .about-product .status a{
+    font-size: 14px;
     font-weight: 500;
-    margin-left: 10px;
-    text-decoration: none;
-    border: 1px solid #010101;
-    padding: 2px;
-    color: #3364c0;
-    background: #f3f2f1;
+    text-decoration: underline;
+    color: #010101;
     transition: all 0.3s ease;
-    border-radius: 6px;
 }
 
-a:hover{
-    font-size: 18px;
+.container .content .about-product .status a:hover{
+    font-size: 14px;
     margin-left: 15px;
-    border: 1px solid #010101;
-    color: #f3f2f1;
-    background: #3364c0;
+    color: #3364c0;
 }
 
-.envio-gratis{
+.container .content .about-product .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content .about-product .price .preço{
+    font-size: 20px;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 700;
+}
+.container .content .about-product .price .envio-gratis{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
     color: #7c7b7b;
+}
+
+.container .content .colors{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container .content .colors .black,
+.container .content .colors .blue,
+.container .content .colors .red,
+.container .content .colors .yellow,
+.container .content .colors .green,
+.container .content .colors .morrow{
+    border: 1px solid #010101;
+    width: 20px;
+    height: 20px;
+}
+
+.container .content .colors .black{
+    background: black;
+}
+
+.container .content .colors .blue{
+    background: blue;
+}
+
+.container .content .colors .red{
+    background: red;
+}
+
+.container .content .colors .yellow{
+    background: yellow;
+}
+
+.container .content .colors .green{
+    background: green;
+}
+
+.container .content .colors .morrow{
+    background: maroon;
+}
+
+
+.container .content .product-detail{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .product-detail h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container .content .product-detail > ul > li{
+    margin-left: 20px;
+    font-weight: 400;
+    gap: 20px;
+}
+
+.container .content .product-detail > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container button{
+    background: #010101;
+    font-size: 18px;
+    color: #f3f2f1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: 10px;
+    padding: 10px ;
+    width: 100%;
+    border: none;
 }
