@@ -174,3 +174,28 @@ body{
     width: 100%;
     border: none;
 }
+
+@media screen and (max-width: 1220px) {
+    .container > h1::after{
+        left: 120px;
+        top: -10px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container > h1::after{
+        font-size: 13px;
+        position: absolute;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container > h1::after{
+        font-size: 13px;
+        position: absolute;
+        left: 20px;
+    }
+}
+
