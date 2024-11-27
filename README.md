@@ -37,3 +37,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
  </div>
  
+
+## Como Utilizar
+1. Faça um clone do repositório:
+    ```bash
+   git clone https://github.com/TiagoDongo/UTA.git
