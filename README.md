@@ -1,44 +1,71 @@
-<div align=center >
-  <img src="https://github.com/TiagoDongo/UTA/assets/167580464/b300cf9c-d8d0-4a9d-a55e-8f7b969d994c" alt="Logo" height="135px">
-  <h2>Universidade Técnica Do Atlântico</h2>
-  <p align=justify>Este repositório contém uma coleção de projetos e trabalhos realizados ao longo do curso de Engenharia Informática e Telecomunicações na Universidade Técnica Do Atlântico. Cada pasta está organizada por disciplina, facilitando a navegação e o acesso aos diferentes projetos.</p>
+<div align="center">
+  <img src="https://github.com/TiagoDongo/UTA/assets/167580464/b300cf9c-d8d0-4a9d-a55e-8f7b969d994c" alt="logo UTA" width="200">
 </div>
 
+---
 
-<div>
-  <h2>Estrutura do Repositório</h2>
-  <p>A organização deste repositório se encontra organizada em pastas, em que cada uma representa uma disciplina com seus respectivos projetos</p>
+# Projetos de Engenharia Informática e Telecomunicações
 
-  * <h3>Algoritmos e Estruturas de Dados</h3>
-  <p>Linguagens e Ferramentas utilizadas</p>
-  <img src="https://img.icons8.com/?size=100&id=6viIuYmvBvuk&format=png&color=000000" height="45px">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
+Este repositório contém uma coleção de projetos e trabalhos realizados ao longo do curso de Engenharia Informática e Telecomunicações. Cada seção representa uma disciplina abordada no curso, acompanhada das ferramentas e linguagens utilizadas.
 
-  * <h3>Arquitetura de Computadores</h3>
-  <p>Linguagens e Ferramentas utilizadas</p>
-  <img src="https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000" height="45px">
-  <img src="https://raw.githubusercontent.com/AhmadNaserTurnkeySolutions/emu8086/master/documentation/img/icon.ico" height="45px">
-  
-  * <h3>Introdução a Programação</h3>
-  <p>Linguagens e Ferramentas utilizadas</p>
-  <img src="https://img.icons8.com/?size=100&id=6viIuYmvBvuk&format=png&color=000000" height="45px">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
+---
 
-  * <h3>Introdução as interfaces Pessoa-Maquina</h3>
-  <p>Linguagens e Ferramentas utilizadas</p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="45px"/>     
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="45px"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="45px"/>
-  
-  * <h3>Fundamentos de Sistemas Operativos</h3>
-  <p>Linguagens e Ferramentas utilizadas</p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" height="45px"/>
-  <img src="https://img.icons8.com/?size=100&id=UjcGNVXknmz3&format=png&color=000000" height="45px">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="45px"/>
- </div>
- 
+## Estrutura do Repositório
+
+* [Introdução à Programação](#introdução-à-programação)
+* [Algoritmos e Estruturas de Dados](#algoritmos-e-estruturas-de-dados)
+* [Arquitetura de Computadores](#arquitetura-de-computadores)
+* [Introdução às Interfaces Pessoa-Máquina](#introdução-às-interfaces-pessoa-máquina)
+* [Fundamentos de Sistemas Operativos](#fundamentos-de-sistemas-operativos)
+
+---
+
+## Introdução à Programação
+Esta disciplina introduz os fundamentos da programação utilizando a linguagem C. Ferramentas utilizadas:
+
+![Code::Blocks](https://img.shields.io/badge/Code--Blocks-000000?style=for-the-badge&logo=codeblocks&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+
+---
+
+## Algoritmos e Estruturas de Dados
+Foco na implementação de algoritmos eficientes e estruturas de dados clássicas utilizando C. Ferramentas utilizadas:
+
+![Code::Blocks](https://img.shields.io/badge/Code--Blocks-000000?style=for-the-badge&logo=codeblocks&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+
+---
+
+## Arquitetura de Computadores
+Exploração do funcionamento interno de computadores, com programação em Assembly. Ferramentas utilizadas:
+
+![Assembly](https://img.shields.io/badge/Assembly-%234682B4?style=for-the-badge)
+![EMU8086](https://img.shields.io/badge/EMU8086-%2332CD32?style=for-the-badge)
+
+---
+
+## Introdução às Interfaces Pessoa-Máquina
+Estudo dos princípios de design e implementação de interfaces amigáveis utilizando tecnologias web. Ferramentas utilizadas:
+
+![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML-%23E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+---
+
+## Fundamentos de Sistemas Operativos
+Introdução aos conceitos básicos de sistemas operativos, como gerenciamento de processos e memória. Ferramentas utilizadas:
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-%23E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Vim](https://img.shields.io/badge/Vim-%23019733?style=for-the-badge&logo=vim&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+
+---
 
 ## Como Utilizar
+
 1. Faça um clone do repositório:
-    ```bash
-   git clone https://github.com/TiagoDongo/UTA.git
+  ````bash
+  git clone https://github.com/TiagoDongo/UTA.git
+  ````
+2. Navegue até a pasta desejada e explore os projetos e trabalhos realizados.
