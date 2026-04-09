@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(160deg, #1e3c72, #2a5298);
+  color: #f4f7ff;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+header p {
+  margin: 12px auto 0;
+  max-width: 720px;
+  color: #d3e2ff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.18);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #ffdd57;
+}
+
+button,
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-radius: 12px;
+}
+
+button {
+  background: #ff9a56;
+  color: #1f2233;
+  padding: 12px 18px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 24px rgba(255, 154, 86, 0.25);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  margin-top: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f4f7ff;
+}
+
+.result {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bank-summary {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+@media (min-width: 860px) {
+  .card {
+    padding: 24px;
+  }
+}

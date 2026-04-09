@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha 1 - Interface Divertida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Ficha 1</h1>
+      </header>
+
+      <section class="card" id="students-card">
+        <h2>1. Médias dos alunos</h2>
+        <form id="students-form">
+          <label>
+            Nome:<input type="text" id="student-name" placeholder="Ex: João" />
+          </label>
+          <label>
+            Notas (separadas por vírgula):<input
+              type="text"
+              id="student-notes"
+              placeholder="Ex: 15,18,20"
+            />
+          </label>
+          <button type="button" id="btn-add-student">Adicionar aluno</button>
+        </form>
+        <button id="btn-students">Verificar médias</button>
+        <div class="result" id="students-result"></div>
+      </section>
+
+      <section class="card" id="array-card">
+        <h2>2. Array de números</h2>
+        <form id="array-form">
+          <label>
+            Números (separados por vírgula):<input
+              type="text"
+              id="array-input"
+              placeholder="Ex: 10,-5,20,30"
+              value="10,-5,20,30,-8,40,50"
+            />
+          </label>
+          <button type="button" id="btn-set-array">Definir array</button>
+        </form>
+        <button id="btn-array">Calcular soma após filtros</button>
+        <div class="result" id="array-result"></div>
+      </section>
+
+      <section class="card" id="auth-card">
+        <h2>3. Autenticação</h2>
+        <form id="auth-form">
+          <label
+            >Username:<input type="text" id="auth-username" value="Tiago"
+          /></label>
+          <label
+            >Password:<input type="password" id="auth-password" value="1234"
+          /></label>
+          <button type="submit">Entrar</button>
+        </form>
+        <div class="result" id="auth-result"></div>
+      </section>
+
+      <section class="card" id="parity-card">
+        <h2>4. Pares e ímpares</h2>
+        <form id="parity-form">
+          <label
+            >Numero final:<input
+              type="number"
+              id="parity-number"
+              value="10"
+              min="0"
+          /></label>
+          <button type="submit">Mostrar sequência</button>
+        </form>
+        <div class="result" id="parity-result"></div>
+      </section>
+
+      <section class="card" id="products-card">
+        <h2>5. Produtos</h2>
+        <form id="products-form">
+          <label>
+            Nome do produto:<input
+              type="text"
+              id="product-name"
+              placeholder="Ex: Sapato"
+            />
+          </label>
+          <label>
+            Preço:<input
+              type="number"
+              id="product-price"
+              placeholder="Ex: 3000"
+              min="0"
+            />
+          </label>
+          <label>
+            Stock:<input
+              type="number"
+              id="product-stock"
+              placeholder="Ex: 20"
+              min="0"
+            />
+          </label>
+          <button type="button" id="btn-add-product">Adicionar produto</button>
+        </form>
+        <button id="btn-products">Ver resumo do stock</button>
+        <div class="result" id="products-result"></div>
+      </section>
+
+      <section class="card" id="person-card">
+        <h2>6. Pessoa formatada</h2>
+        <form id="person-form">
+          <label
+            >Nome:<input type="text" id="person-name" value="Tiago"
+          /></label>
+          <label
+            >Idade:<input type="number" id="person-age" value="21" min="0"
+          /></label>
+          <button type="submit">Mostrar</button>
+        </form>
+        <div class="result" id="person-result"></div>
+      </section>
+
+      <section class="card" id="grades-card">
+        <h2>7. Aprovados e reprovados</h2>
+        <form id="grades-form">
+          <label>
+            Nome do aluno:<input
+              type="text"
+              id="grades-name"
+              placeholder="Ex: Tiago"
+            />
+          </label>
+          <label>
+            Notas (separadas por vírgula):<input
+              type="text"
+              id="grades-notes"
+              placeholder="Ex: 10,12,19,20"
+            />
+          </label>
+          <button type="button" id="btn-add-grade">Adicionar aluno</button>
+        </form>
+        <button id="btn-grades">Contar alunos</button>
+        <div class="result" id="grades-result"></div>
+      </section>
+
+      <section class="card" id="name-card">
+        <h2>8. Nome completo</h2>
+        <form id="name-form">
+          <label
+            >Nome completo:<input
+              type="text"
+              id="full-name"
+              value="Tiago Henrique da Graça Dongo"
+          /></label>
+          <button type="submit">Formatar</button>
+        </form>
+        <div class="result" id="name-result"></div>
+      </section>
+
+      <section class="card" id="bank-card">
+        <h2>9. Conta bancária</h2>
+        <div class="bank-summary" id="bank-summary"></div>
+        <form id="bank-form">
+          <label
+            >Valor:<input
+              type="number"
+              id="bank-amount"
+              value="500"
+              min="1"
+              step="1"
+          /></label>
+          <div class="buttons-row">
+            <button type="button" id="btn-deposit">Depositar</button>
+            <button type="button" id="btn-withdraw">Levantar</button>
+          </div>
+        </form>
+        <div class="result" id="bank-result"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
