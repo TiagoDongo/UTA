@@ -2,3 +2,5 @@
 * .o
 __pycache__
 *.env
+.venv
+*.pyc

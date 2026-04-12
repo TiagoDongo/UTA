@@ -46,5 +46,8 @@ O repositório está organizado por disciplina, facilitando a identificação do
 
   ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
   ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![FastAPI](https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white)
+  
   - **Projetos Concluídos:**
     - `AppTestAPI:` Uma API REST construída com FastAPI e SQLAlchemy para gerenciar usuários, juntamente com um frontend web simples para exibir os dados.
+    - `LoginGoogleOAuth:` Um sistema de login utilizando autenticação OAuth do Google, implementado com FastAPI.
