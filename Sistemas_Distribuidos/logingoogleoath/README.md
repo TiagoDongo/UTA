@@ -10,7 +10,7 @@
 ![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white)
 
 
-Implementação de autenticação com Google OAuth 2.0 seguindo o **Authorization Code Flow**, desenvolvida com FastAPI no backend e JavaScript puro no frontend.
+Implementação de autenticação com Google OAuth 2.0 e Github OAuth, desenvolvida com FastAPI no backend e JavaScript puro no frontend.
 
 ---
 > **Notas:** 
@@ -20,6 +20,13 @@ Implementação de autenticação com Google OAuth 2.0 seguindo o **Authorizatio
 >   - `src/` - Frontend JavaScript
 
 ---
+
+## Menu
+- [Configuração](#configuração)
+- [Instalação de Dependências](#instalação-de-dependências)
+- [Execução](#execução)
+- [Documentação da API](#documentação-da-api)
+- [Rotas da API](#rotas-da-api)
 
 
 ## Configuração
@@ -32,6 +39,8 @@ Implementação de autenticação com Google OAuth 2.0 seguindo o **Authorizatio
   GOOGLE_CLIENT_SECRET=teu_client_secret
   REDIRECT_URI=http://localhost:5000/callback           
   CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+  GITHUB_CLIENT_ID=teu_client_id
+  GITHUB_CLIENT_SECRET=teu_client_secret
 ```
 
 ## Instalação de Dependências
@@ -54,13 +63,16 @@ pip install fastapi uvicorn requests dotenv itsdangerous
 
 3. Abre o browser em `http://localhost:3000`
 
----
+## Documentação da API
+A documentação interativa da API está disponível em `http://localhost:5000/docs` após iniciar o backend.
 
-## Rotas da API
+### Rotas da API
 
 | Método | Rota        | Descrição                          |
 |--------|-------------|------------------------------------|
 | GET    | `/login`    | Redireciona para o Google          |
-| GET    | `/callback` | Recebe o code e cria a sessão      |
-| GET    | `/me`       | Devolve os dados do utilizador     |
+| GET    | `/login/github`   | Redireciona para o Github                   |
+| GET    | `/callback` | Recebe o code e cria a sessão do google     |
+| GET    | `/callback/github` | Recebe o code e cria a sessão do github      |
+| GET    | `/me`       | Devolve os dados do utilizador (username, foto de perfil e email)     |
 | GET    | `/logout`   | Termina a sessão                   |
