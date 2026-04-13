@@ -27,9 +27,11 @@ async function loadUsers() {
     return
   }
 
+  const photo = user.picture || user.avatar_url
+
   container.innerHTML = `
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:480px; gap:15px;">
-      <img src="${user.picture}" style="border-radius:50%; width:90px;">
+      <img src="${photo}" style="border-radius:50%; width:90px;">
       <h2>${user.name}</h2>
       <p>${user.email}</p>
       <button onclick="logout()" 

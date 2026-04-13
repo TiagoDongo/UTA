@@ -43,6 +43,20 @@ def callback (request: Request, code: str, state: str):
       },
   ).json()
 
+  if not user_data.get("email"):
+    emails_response = requests.get(
+      "https://api.github.com/user/emails",
+      headers={
+          "Authorization": f"Bearer {access_token}",
+          "Accept": "application/json"
+      }
+    ).json()
+    primary_email = next (
+      (e["email"] for e in emails_response if e["primary"] and e["verified"]),
+      None
+    )
+    user_data["email"] = primary_email
+
   request.session["user"] = user_data
   request.session["access_token"] = access_token
 
