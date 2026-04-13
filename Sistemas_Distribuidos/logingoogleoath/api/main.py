@@ -6,6 +6,7 @@ import os
 import secrets, requests
 from dotenv import load_dotenv
 from routes import router
+from githubRoutes import githubRouter
 
 load_dotenv()
 
@@ -27,3 +28,4 @@ app.add_middleware(
 )
 
 app.include_router(router)
+app.include_router(githubRouter)

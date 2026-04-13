@@ -1,5 +1,7 @@
 const container = document.getElementById("container")
 const googleLogin = document.getElementById("google-login")
+const githubLogin = document.getElementById("github-login")
+
 
 window.onload = async () => {
   const params = new URLSearchParams(window.location.search)
@@ -49,4 +51,10 @@ googleLogin.addEventListener('click', (event) => {
   event.preventDefault()
   console.log("[login] a redirecionar para o Google...")
   window.location.href = "http://localhost:5000/login"
+})
+
+githubLogin.addEventListener('click', (gitevent) => {
+  gitevent.preventDefault()
+  console.log("[login] a redirecionar para o Github...")
+  window.location.href = "http://localhost:5000/login/github"
 })
