@@ -1,0 +1,5 @@
+fastapi
+strawberry-graphql
+sqlalchemy
+python-dotenv
+uvicorn
