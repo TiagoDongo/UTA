@@ -1,0 +1,25 @@
+pip install -r requirements.txt
+
+uvicorn server:app --reload
+
+Then clients from other devices can connect using:
+
+uvicorn server:app --host 0.0.0.0 --port 8000
+
+Find your server IP:
+
+Linux:
+
+ip addr
+
+or
+
+hostname -I
+
+Windows:
+
+ipconfig
+
+🔵
+
+🔴
