@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"/>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>MovieWeb</title>
+</head>
+<body>
+  <div class="container">
+    <!-- sidebar -->
+    <aside>
+      <div class="toggle">
+        <div class="logo">
+          <div class="icon">
+            <i class="ri-clapperboard-ai-line"></i>
+          </div>
+          <h2>Movie<span class="danger">web</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <a href="#" class="active">
+          <i class="ri-movie-2-line"></i>
+          <h3>Movies</h3>
+        </a>
+        <a href="#" >
+          <i class="ri-star-line"></i>
+          <h3>Favorites</h3>
+        </a>
+        <a href="#">
+          <i class="ri-history-line"></i>
+          <h3>History</h3>
+        </a>
+        <a href="#">
+          <i class="ri-settings-3-line"></i>
+          <h3>Settings</h3>
+        </a>
+        <a href="#" class="danger">
+          <i class="ri-logout-circle-line"></i>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- main -->
+    <main>
+      <!-- navbar -->
+      <nav>
+        <div class="right">
+          <i class="ri-menu-fill"></i>
+          <form id="search-form" action="#">
+            <div class="form-input">
+              <input type="search" id="search" placeholder="Search..." />
+              <button class="search-btn" type="submit">
+                <i class="ri-search-line"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="left">
+          <div class="dark-mode">
+            <i class="ri-sun-fill active"></i>
+            <i class="ri-moon-fill"></i>
+          </div>
+
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Tiago</b></p>
+              <small class="text-muted">User</small>
+            </div>
+            <div class="profile-photo">
+              <img src="images/00175.png" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+
+      <div class="movies" id="movies">
+        
+      </div>
+      
+
+    </main>
+    <!-- end of main -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
