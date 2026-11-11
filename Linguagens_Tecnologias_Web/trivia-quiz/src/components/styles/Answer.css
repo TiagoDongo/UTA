@@ -1,0 +1,29 @@
+.answer {
+  border: 2px solid #0B5365;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+  padding: 0 12px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.answer:hover{
+  border-color: #fff;
+}
+
+.answer-letter{
+  background: #0B5365;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.answer-text{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}

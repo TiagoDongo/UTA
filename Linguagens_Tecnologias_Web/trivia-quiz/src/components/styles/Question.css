@@ -1,0 +1,22 @@
+.quest {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.question{
+  background: linear-gradient(20deg, #114053, #09757C);
+  text-align: center;
+  padding: 18px 0 18px 0;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.answers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}

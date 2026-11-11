@@ -1,0 +1,29 @@
+.quiz{
+  width: 800px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  color: #58BC9D;
+  border: 1px solid #58BC9D;
+  background: #164357;
+  padding: 12px 40px;
+  border-radius: 36px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.next-button{
+  background: linear-gradient(-13deg, #114053, #09757C);
+  color: #fff;
+  padding: 12px 60px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
