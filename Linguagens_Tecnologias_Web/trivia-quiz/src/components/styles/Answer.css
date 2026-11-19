@@ -1,5 +1,5 @@
 .answer {
-  border: 2px solid #0B5365;
+  border: 2px solid #0b5365;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -10,20 +10,46 @@
   transition: all 0.3s ease;
 }
 
-.answer:hover{
+.answer:hover {
   border-color: #fff;
 }
 
-.answer-letter{
-  background: #0B5365;
+.answer-letter {
+  background: #0b5365;
   padding: 18px;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
 
-.answer-text{
+.answer-text {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+}
+
+.answer.correct-answer {
+  border-color: #16a879;
+  background: #123f3d;
+}
+
+.answer.correct-answer .answer-letter {
+  background: #11795f;
+}
+
+.answer.wrong-answer {
+  border-color: #d9435a;
+  background: #442b3a;
+}
+
+.answer.wrong-answer .answer-letter {
+  background: #b53650;
+}
+
+.answer.disabled-answer {
+  cursor: default;
+}
+
+.answer.disabled-answer:hover {
+  border-color: #0b5365;
 }
